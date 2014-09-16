@@ -1,0 +1,58 @@
+<web-app xmlns="http://java.sun.com/xml/ns/j2ee"
+   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+   xsi:schemaLocation="http://java.sun.com/xml/ns/j2ee 
+      http://java.sun.com/xml/ns/j2ee/web-app_2_4.xsd"
+   version="2.4">
+
+   <!-- General description of your Web application -->
+   <display-name>
+      CNT 4714 Summer 2014 - Project 4
+   </display-name>
+
+   <description>
+      This is the Web application for project 4 which is a 3-tier
+      application.
+   </description>
+
+
+<!-- Servlet definitions -->
+
+    <servlet>
+		<servlet-name>dbconnect</servlet-name>
+
+		<description>
+	 	  A color preference survey servlet application
+		</description>
+
+		<servlet-class>
+		   DBservlet
+		</servlet-class>
+		<init-param>
+		   <param-name>databaseDriver</param-name>
+	 	  <param-value>com.mysql.jdbc.Driver</param-value>
+		</init-param>
+		<init-param>
+		    <param-name>databaseName</param-name>
+		    <param-value>jdbc:mysql://localhost/project4</param-value>
+		</init-param>
+		<init-param>
+            <param-name>username</param-name>
+	    	<param-value>root</param-value>
+		</init-param>
+		<init-param>
+		    <param-name>password</param-name>
+		    <param-value>freewheelin</param-value>
+		</init-param>
+   </servlet>
+
+
+
+
+   <!-- Servlet mappings -->
+   <servlet-mapping>
+	<servlet-name>dbconnect</servlet-name>
+	<url-pattern>/dbconnect</url-pattern>
+    </servlet-mapping>
+   
+</web-app>
+

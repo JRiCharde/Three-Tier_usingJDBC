@@ -1,0 +1,124 @@
+body
+{
+	background-color: lightblue;
+	margin-left:auto;
+	margin-right:auto;
+	
+}
+
+div
+{
+	text-align: center;
+	margin-left:auto;
+	margin-right:auto;
+}
+
+form.return
+{
+	position: absolute;
+    left: 100px;
+	
+}
+
+fieldset
+{
+   width: 500px;
+   padding:60px;
+   border:5px inset gold;
+	border-radius: 10px;   
+	margin-left:auto;
+	margin-right:auto;
+}
+
+legend 
+{
+   font-family : Arial, serif;
+   font-size: 3em;
+   font-weight:bold;
+   color:black;
+   margin-left:auto;
+	margin-right:auto;
+}
+
+label
+{
+   font-family : Arial, sans-serif;
+   font-size:1.5em;
+   font-weight: bold;
+   text-align: center;
+   vertical-align: middle;
+}
+
+input[type=submit]
+{
+    width: 15em;  
+    height: 2em;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: black;
+    color: yellow;
+    font-size: 0.7em;
+}
+
+input[type=reset]
+{
+    width: 10em;  
+    height: 2em;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: black;
+    color: yellow;
+    font-size: 0.7em;
+}
+
+table, th 
+{
+	text-align: center;
+	font-size: 1em;
+	border: 1px groove;
+	border-color: lightblue;
+	margin-left: auto;
+    margin-right: auto;
+    padding: 3px;
+	
+}
+
+tr, td
+{
+ 	text-align: center;
+	padding: 0px;
+	margin: 0px;
+	
+ 	font-size: 0.9em;
+}
+
+tr:nth-child(even) {
+    background-color: lightgrey;
+    padding: 1px;
+}
+
+tr:nth-child(odd) {
+    background-color: white;
+    
+}
+
+th
+{
+	background-color: red;
+}
+
+table
+{
+	background-color: lightblue;
+}
+
+textarea
+{
+	font-size: 0.8em;
+}
+
+th.update
+{
+    background-color: green;
+    font-size: 1.2em;
+}

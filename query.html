@@ -1,0 +1,54 @@
+<!--
+ Name: William Jeremy RiCharde
+ Course: CNT 4714 - Summer 2014 - Project 4
+ Assignment title: Developing A Three-Tier Disributed Web-Based Application
+ Date: July 11, 2014
+ 
+ query portion of webpage
+ -->
+
+<?xml version = "1.0"?>
+<!DOCTYPE html >
+<!-- query.html -->
+
+<html xmlns = "http://www.w3.org/1999/xhtml">
+<head>
+   <title>Execute query in DB</title>
+   <link rel="stylesheet" type="text/css" href="css/form.css" />
+</head>
+<body bgcolor=blue>
+   <font size = 4>
+   <body>
+    <p>
+    You are connected to the Project 4 database. <br>
+    Please enter any valid SQL query or update statement.<br>
+    If no query/update command is given, the execute command will display all
+    supplier information in the database. <br>
+    All execution results will appear on a new page. <br>
+    <font size = 3>
+    To return, press the 'Return to Query' Button <br><br>
+    </font>
+    
+   <form action = "/Project4/dbconnect"  method = "post">
+   
+   
+   
+   <div class='container' >
+		<label for='queryArea' >Enter SQL query</label><br/>
+		<textarea style="background-color: lightyellow" name="queryArea" id = "queryArea" 
+			 rows="10" cols="100" ></textarea><br/>
+	</div>
+   
+   <p>
+   	<input type = "submit" value = "Execute Command" />
+   	<input type="reset" value="Clear Form">
+   </p>
+   </font>
+   
+   
+</form>
+	
+	
+
+</body>
+</html>
